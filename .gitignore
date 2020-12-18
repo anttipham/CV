@@ -22,3 +22,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# big files
+/src/components/Front/front.xcf
+/src/components/Front/front-original.jpg
