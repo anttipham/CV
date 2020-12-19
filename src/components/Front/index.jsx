@@ -25,7 +25,7 @@ const Front = () => {
   const [active, setActive] = useState(false)
 
   const handleLoad = () => {
-    console.log('1 kuva ladattu')
+    // console.log('1 kuva ladattu')
     setDoneLoading(doneLoading + 1)
   }
 
