@@ -51,18 +51,18 @@ export const BackgroundImg = styled(Img)`
 export const AnttiImg = styled(Img)`
 `
 export const CvImg = styled(Img)`
-  top: 55%;
-  right: -75px;
+  top: 55vh;
+  right: -10vw;
   height: 70vh;
-  @media only screen and (min-width: 620px) {
-    top: 45%;
-    right: -95px;
+  @media only screen and (min-width: 70vh) {
+    top: 45vh;
+    right: -5vw;
     height: 100vh;
   }
-  @media only screen and (min-width: 1260px) {
+  @media only screen and (min-width: 142vh) {
     top: auto;
   }
-  @media only screen and (min-width: 1620px) {
+  @media only screen and (min-width: 172vh) {
     right: auto;
   }
 
