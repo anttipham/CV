@@ -13,6 +13,7 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: #211e12;
   /* background: url(${TEST}) center/auto 100% no-repeat; */
   display: flex;
   justify-content: center;
