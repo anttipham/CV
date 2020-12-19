@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const baseUnit = 1/3
+const baseUnit = 1/10
 
 /**
  * Käytetään styled componenteissa.
@@ -42,10 +42,10 @@ const Img = styled.img`
 `
 
 export const BackgroundImg = styled(Img)`
-  transition: filter ${insertDuration(2*baseUnit)}ms ease-in-out ${insertDuration(baseUnit)}ms;
+  transition: filter ${insertDuration(9*baseUnit)}ms ease-in-out ${insertDuration(baseUnit)}ms;
 
   ${({ entering, entered }) => (entering || entered) && `
-    filter: blur(15px) brightness(75%);
+    filter: blur(30px) brightness(75%);
   `}
 `
 export const AnttiImg = styled(Img)`
@@ -66,7 +66,7 @@ export const CvImg = styled(Img)`
     right: auto;
   }
 
-  transition: opacity ${insertDuration(2*baseUnit)}ms ease-in-out ${insertDuration(baseUnit)}ms;
+  transition: opacity ${insertDuration(3*baseUnit)}ms ease-in-out ${insertDuration(baseUnit)}ms;
   opacity: 0;
   
   ${({ entering, entered }) => (entering || entered) && `
