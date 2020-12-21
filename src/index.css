@@ -8,8 +8,12 @@ body {
   /* overflow-x: hidden; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  margin: auto;
-  /* transition-timing-function: ease; */
+th {
+  text-align: left;
+}
+
+ul {
+  margin: 0;
+  padding-left: 30px;
+  /* list-style: none; */
 }
