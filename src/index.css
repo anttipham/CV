@@ -5,11 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
   /* overflow-x: hidden; */
+}
+
+table {
+  padding: 30px;
+  border: 1px solid #211e12;
+  border-radius: 40px;
+}
+
+tr {
+  line-height: 2.5em;
 }
 
 th {
   text-align: left;
+  padding-right: 3em;
 }
 
 ul {
