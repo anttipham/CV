@@ -16,6 +16,7 @@ import Programming from './textParts/Programming'
 const Container = styled.div`
   margin: 0 auto;
   max-width: 1000px;
+  padding: 30px;
   padding-bottom: 100px;
 `
 const FadeWithMargin = styled(Fade)`
