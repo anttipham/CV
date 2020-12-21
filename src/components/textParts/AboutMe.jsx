@@ -5,7 +5,7 @@ import { A } from '../LinkToNewTab'
 
 const FloatRight = styled.img`
   float: right;
-  /* width: 500px; */
+  max-width: 100%;
 `
 
 const AboutMe = () => {
