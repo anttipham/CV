@@ -1,11 +1,23 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const FloatRight = styled.div`
+  float: right;
+`
+const InlineH2 = styled.h2`
+  display: inline-block;
+  padding-right: 1em;
+`
 
 const ContactInformation = () => {
   return (
     <div>
-      <h2>Minh An Antti Pham</h2>
-      <div>Kutsumanimi on <strong>Antti</strong></div>
-      <div>3.2.2001</div>
+      <FloatRight>
+        <h3>Päivitetty:</h3> 21.12.2020
+      </FloatRight>
+
+      <InlineH2>Antti Minh An Pham</InlineH2>
+      <span>Syntynyt 3.2.2001</span>
 
       <div>Metsävirnankatu 8, 33720 Tampere</div>
       <div>antti.pham@gmail.com</div>
