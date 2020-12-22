@@ -2,9 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import AnimateWhenActivated from './AnimateWhenActivated'
 
-const VIEWPORT_MARGIN = window.innerHeight / 20
-// const VIEWPORT_MARGIN = 0
-
 const AnimateWhenEnteringViewport = ({ active: forceActive = false, timeout, children, styledAnimationComponent: StyledAnimationComponent }) => {
   const [active, setActive] = useState(false)
   const ref = useRef()
@@ -15,14 +12,23 @@ const AnimateWhenEnteringViewport = ({ active: forceActive = false, timeout, chi
      * @param {Object} elementRectangle Elementin paikkojen tiedot.
      */
     const inViewPort = ({ top, bottom }) => {
+      const viewportMargin = window.innerHeight / 8
+
       // Paikkakoordinaateissa (0, 0) on näytön vasen yläkulma ja
       // oikean alakulman koordinaatit ovat (window.innerWidth, window.innerHeight)
-      const notAboveViewport = 0 + VIEWPORT_MARGIN <= top
-      const notBelowViewport = bottom <= window.innerHeight - VIEWPORT_MARGIN
+      const aboveViewport = (elementCoordinate) =>
+        elementCoordinate < 0 + viewportMargin
+      const belowViewport = (elementCoordinate) =>
+        window.innerHeight - viewportMargin < elementCoordinate
 
-      // Jos elementti ei ole näytön yllä tai alla, elementin täytyy olla keskellä näyttöä.
-      // Jos elementti on sekä näytön yllä että alla, elementin täytyy olla näytön yllä, keskellä ja alla.
-      return notBelowViewport === notAboveViewport
+      return (
+        // Elementin yläreuna on keskellä ruutua
+        (!aboveViewport(top) && !belowViewport(top))
+        // Elementin alareuna on keskellä ruutua
+        || (!aboveViewport(bottom) && !belowViewport(bottom))
+        // Jos elementin yläreuna on näytön yllä ja alareuna näytön alla, elementin täytyy olla keskellä näyttöä. (Elementti on suurempi kuin näyttö.)
+        || (aboveViewport(top) && belowViewport(bottom))
+      )
     }
 
     const elementRectangle = ref.current.getBoundingClientRect()
