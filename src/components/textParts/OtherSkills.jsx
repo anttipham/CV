@@ -1,34 +1,30 @@
 import React from 'react'
 
+
+
 const OtherSkills = () => {
   return (
     <div>
       <h2>Muut taidot</h2>
 
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              Taulukkolaskentaohjelmien käyttö
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Laaja tietämys tietokoneiden komponenteista
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Äänen-, kuvan- ja videonkäsittelyohjelmien käyttö (Audacity, GIMP ja japaninkielinen AviUtl)
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Osaan väkisin vaihtaa Windows 10 -tietokoneen salasanan, joten tietokoneesi salasanan vahvuudella ei ole mitään merkitystä minun edessäni &gt;:D
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <p>
+        Äänen-, kuvan- ja videonkäsittelyohjelmien käyttö (Audacity, GIMP ja japaninkielinen AviUtl)
+      </p>
+      <p>
+        Laaja tietämys tietokoneiden komponenteista (eli tietokoneiden osista), ja osaan kasata tietokoneen.
+      </p>
+      <p>
+        Osaan väkisin vaihtaa Windows 10 -tietokoneen salasanan, joten tietokoneesi salasanan vahvuudella ei ole mitään merkitystä minun edessäni &gt;:D
+        <br />
+        <small>
+          <em>
+            Opin tämän Hopen työkokeilussa. Lahjoitettujen tietokoneiden salasanat joskus unohtuvat, jolloin tarvitaan järempiä keinoja.
+          </em>
+        </small>
+      </p>
+      <p>
+        Osaan käyttää taulukkolaskentaohjelmia.
+      </p>
     </div>
   )
 }

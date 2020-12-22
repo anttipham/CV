@@ -4,19 +4,13 @@ import leaderboardPic from '../../pictures/leaderboard.jpg'
 import { A } from '../LinkToNewTab'
 
 const FloatRight = styled.img`
-  float: right;
+  /* float: right; */
   max-width: 100%;
 `
 
 const AboutMe = () => {
   return (
     <div>
-      <A href="https://datatahti.fi/aiemmat-vuodet.html">
-        <FloatRight
-          src={leaderboardPic}
-          alt="Kuva Datatähti 2020:n tulokset"
-        />
-      </A>
       <h2>Tietoa minusta</h2>
       <p>
         Olen päässyt lukion välisessä, valtakunnallisessa {}
@@ -41,6 +35,13 @@ const AboutMe = () => {
       <p>
         Olen siis taitava sekä ohjelmoinnissa että matematiikassa ja minulla on oikeaa näyttöäkin niistä.
       </p>
+
+      <A href="https://datatahti.fi/aiemmat-vuodet.html">
+        <FloatRight
+          src={leaderboardPic}
+          alt="Kuva Datatähti 2020:n tulokset"
+        />
+      </A>
     </div>
   )
 }

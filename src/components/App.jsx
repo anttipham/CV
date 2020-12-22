@@ -12,6 +12,7 @@ import Hobbies from './textParts/Hobbies'
 import Language from './textParts/Language'
 import OtherSkills from './textParts/OtherSkills'
 import Programming from './textParts/Programming'
+import WorkExperience from './textParts/WorkExperience'
 
 const Container = styled.div`
   margin: 0 auto;
@@ -20,7 +21,7 @@ const Container = styled.div`
   padding-bottom: 100px;
 `
 const FadeWithMargin = styled(Fade)`
-  margin: 100px 0;
+  margin: 50px 0;
 `
 
 const App = () => (
@@ -34,6 +35,7 @@ const App = () => (
       >
         <ContactInformation />
         <AboutMe />
+        <WorkExperience />
         <Language />
         <Programming />
         <OtherSkills />
