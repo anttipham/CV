@@ -9,18 +9,13 @@ body {
 }
 
 table {
-  padding: 30px;
+  width: 100%;
+  /* padding: 20px;
   border: 1px solid #211e12;
-  border-radius: 40px;
+  border-radius: 30px; */
 }
-
-tr {
-  line-height: 2.5em;
-}
-
 th {
   text-align: left;
-  padding-right: 3em;
 }
 
 ul {
