@@ -15,7 +15,7 @@ const ModalDiv = styled(Paper)`
   border: 1px solid black;
 `
 
-const InfoModal = ({ text='lisätietoa', children }) => {
+const OpenModal = ({ text='lisätietoa', children }) => {
   const [open, setOpen] = useState(false)
 
   const handleOpen = (event) => {
@@ -50,4 +50,4 @@ const InfoModal = ({ text='lisätietoa', children }) => {
   )
 }
 
-export default InfoModal
+export default OpenModal

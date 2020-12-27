@@ -8,6 +8,7 @@ import Fade from './Animation/Fade'
 import Front from './Front'
 import AboutMe from './textParts/AboutMe'
 import ContactInformation from './textParts/ContactInformation'
+import Education from './textParts/Education'
 import Hobbies from './textParts/Hobbies'
 import Introduction from './textParts/Introduction'
 import Language from './textParts/Language'
@@ -38,6 +39,7 @@ const App = () => (
         <ContactInformation />
         <AboutMe />
         <WorkExperience />
+        <Education />
         <Language />
         <Programming />
         <OtherSkills />
