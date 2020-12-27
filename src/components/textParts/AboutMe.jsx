@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import leaderboardPic from '../../pictures/leaderboard.jpg'
-import InfoModal from '../OpenModal'
+import OpenModal from '../OpenModal'
 import LinkToNewTab from '../wrappedComponents/LinkToNewTab'
 
 const FloatRight = styled.img`
@@ -44,7 +44,7 @@ const AboutMe = () => {
         <LinkToNewTab href="https://datatahti.fi/">
           Datatähti-ohjelmointikilpailussa
         </LinkToNewTab>
-        <InfoModal>{datatahtiContent}</InfoModal> {}
+        <OpenModal>{datatahtiContent}</OpenModal> {}
 
         kymmenennelle sijalle vuonna 2020 sekä suorittanut 26 opintopisteen verran yliopiston koodauskursseja kaikki 5:n arvosanalla.
         {/* <InfoModal text="opintosuoritukseni"><Studies /></InfoModal> */}
@@ -60,7 +60,7 @@ const AboutMe = () => {
         13 760 pitkän matematiikan kirjoittajista
         {/* <SmallLinkAbove href="https://www.ylioppilastutkinto.fi/ext/stat/FS2020A2011T2010.pdf" /> */}
         {/* https://www.ylioppilastutkinto.fi/tietopalvelut/tilastot/tilastotaulukot */}
-        <InfoModal text="lähde">{source}</InfoModal>
+        <OpenModal text="lähde">{source}</OpenModal>
       </p>
       <p>
         Olen siis taitava sekä ohjelmoinnissa että matematiikassa ja minulla on oikeaa näyttöäkin niistä.
