@@ -1,3 +1,4 @@
+import { Link } from '@material-ui/core'
 import React from 'react'
 // import styled from 'styled-components'
 
@@ -13,15 +14,11 @@ const ContactInformation = () => {
   const email = 'antti.pham@gmail.com'
   return (
     <div>
-      <div>
-        <b>Päivitetty:</b> 21.12.2020
-      </div>
-
       <h2>Antti Minh An Pham</h2>
       <h3>Syntynyt 3.2.2001</h3>
 
       <div>Metsävirnankatu 8, 33720 Tampere</div>
-      <div><a href={`mailto:${email}`}>{email}</a></div>
+      <div><Link href={`mailto:${email}`}>{email}</Link></div>
       <div>0405588207</div>
       <p>
         <em>

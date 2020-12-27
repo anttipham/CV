@@ -1,4 +1,5 @@
 import React from 'react'
+import InfoModal from '../InfoModal'
 
 
 
@@ -15,12 +16,11 @@ const OtherSkills = () => {
       </p>
       <p>
         Osaan väkisin vaihtaa Windows 10 -tietokoneen salasanan, joten tietokoneesi salasanan vahvuudella ei ole mitään merkitystä minun edessäni &gt;:D
-        <br />
-        <small>
-          <em>
-            Opin tämän Hopen työkokeilussa. Lahjoitettujen tietokoneiden salasanat joskus unohtuvat, jolloin tarvitaan järempiä keinoja.
-          </em>
-        </small>
+        <InfoModal>
+          <p>
+            Opin tämän työkokeilussa Hopessa. Lahjoitettujen tietokoneiden salasanat joskus unohtuvat, jolloin tarvitaan järempiä keinoja.
+          </p>
+        </InfoModal>
       </p>
       <p>
         Osaan käyttää taulukkolaskentaohjelmia.
