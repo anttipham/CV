@@ -1,14 +1,8 @@
 import React from 'react'
-import InfoModal from '../OpenModal'
 import LinkToNewTab from '../wrappedComponents/LinkToNewTab'
-import SmallLinkAbove from '../wrappedComponents/SmallLinkAbove'
 
 const Introduction = () => {
   const sourceCode = 'https://github.com/anttipham/CV'
-
-  const modalContent = (
-    <p>Esimerkkiteksti</p>
-  )
 
   return (
     <div>
