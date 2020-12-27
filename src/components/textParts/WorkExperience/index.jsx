@@ -1,26 +1,25 @@
 import React from 'react'
-import WorkExperienceRow from './WorkExperienceRow'
+import TableRow from '../TableRow'
 
 const WorkExperience = () => {
   return (
     <div>
       <h2>Työkokemus</h2>
 
-
       <table>
         <tbody>
-          <WorkExperienceRow place="Outloud Oy" time="1.6. – 12.6.2015">
+          <TableRow left="Outloud Oy" right="1.6. – 12.6.2015">
             Ohjelmistosuunnittelu, sovellusten ideointi, ATK-tuki
-          </WorkExperienceRow>
-          <WorkExperienceRow place="Helapuiston päiväkoti" time="26.5. – 27.5.2016">
+          </TableRow>
+          <TableRow left="Helapuiston päiväkoti" right="26.5. – 27.5.2016">
             Lastentarhanopettaja
-          </WorkExperienceRow>
-          <WorkExperienceRow place="K‑Supermarket HerkkuDuo" time="28.11. – 9.12.2016">
+          </TableRow>
+          <TableRow left="K‑Supermarket HerkkuDuo" right="28.11. – 9.12.2016">
             Hyllyttäjä
-          </WorkExperienceRow>
-          <WorkExperienceRow place="Hope ry" time="24.8. – 17.12.2020">
+          </TableRow>
+          <TableRow left="Hope ry" right="24.8. – 17.12.2020">
             Full Stack -ohjelmoija, ohjelmistokehittäjä, tekninen tuki
-          </WorkExperienceRow>
+          </TableRow>
         </tbody>
       </table>
     </div>
