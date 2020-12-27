@@ -54,11 +54,7 @@ const AboutMe = () => {
         <LinkToNewTab href="https://techfinland100.fi/ylioppilaat2020/">
           Teknologiateollisuuden stipendin
         </LinkToNewTab>, jonka sai vain {}
-        149 kokelasta
-        {/* <SmallLinkAbove href="https://techfinland100.fi/wp/wp-content/uploads/2020/05/Ylioppilaat-kev%C3%A4t-2020.pdf" /> {} */}
-
-        13 760 pitkän matematiikan kirjoittajista
-        {/* <SmallLinkAbove href="https://www.ylioppilastutkinto.fi/ext/stat/FS2020A2011T2010.pdf" /> */}
+        149 kokelasta 13 760 pitkän matematiikan kirjoittajista
         {/* https://www.ylioppilastutkinto.fi/tietopalvelut/tilastot/tilastotaulukot */}
         <OpenModal text="lähde">{source}</OpenModal>
       </p>
