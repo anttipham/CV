@@ -1,5 +1,5 @@
 import React from 'react'
-import InfoModal from '../InfoModal'
+import InfoModal from '../OpenModal'
 import LinkToNewTab from '../wrappedComponents/LinkToNewTab'
 import SmallLinkAbove from '../wrappedComponents/SmallLinkAbove'
 

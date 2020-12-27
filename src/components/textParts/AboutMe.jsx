@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import leaderboardPic from '../../pictures/leaderboard.jpg'
-import InfoModal from '../InfoModal'
+import InfoModal from '../OpenModal'
 import LinkToNewTab from '../wrappedComponents/LinkToNewTab'
 
 const FloatRight = styled.img`
