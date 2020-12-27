@@ -16,7 +16,7 @@ const TextDiv = styled.div`
 const Programming = () => {
   return (
     <div>
-      <h2>Ohjelmointiin liittyvät teknologiat yms.</h2>
+      <h2>Osaamani ohjelmointiin liittyvät teknologiat yms.</h2>
 
       <div>
         <HeaderDiv>
