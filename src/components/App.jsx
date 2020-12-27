@@ -9,6 +9,7 @@ import Front from './Front'
 import AboutMe from './textParts/AboutMe'
 import ContactInformation from './textParts/ContactInformation'
 import Hobbies from './textParts/Hobbies'
+import Introduction from './textParts/Introduction'
 import Language from './textParts/Language'
 import OtherSkills from './textParts/OtherSkills'
 import Programming from './textParts/Programming'
@@ -33,6 +34,7 @@ const App = () => (
         styledAnimationComponent={FadeWithMargin}
         timeout={animationConfig.fadeDuration}
       >
+        <Introduction />
         <ContactInformation />
         <AboutMe />
         <WorkExperience />
