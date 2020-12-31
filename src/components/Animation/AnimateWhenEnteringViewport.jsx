@@ -12,7 +12,7 @@ const AnimateWhenEnteringViewport = ({ active: forceActive = false, timeout, chi
      * @param {Object} elementRectangle Elementin paikkojen tiedot.
      */
     const inViewPort = ({ top, bottom }) => {
-      const viewportMargin = window.innerHeight / 8
+      const viewportMargin = window.innerHeight / 5
 
       // Paikkakoordinaateissa (0, 0) on näytön vasen yläkulma ja
       // oikean alakulman koordinaatit ovat (window.innerWidth, window.innerHeight)
