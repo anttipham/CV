@@ -4,9 +4,12 @@ import leaderboardPic from '../../pictures/leaderboard.jpg'
 import OpenModal from '../OpenModal'
 import LinkToNewTab from '../wrappedComponents/LinkToNewTab'
 
-const FloatRight = styled.img`
+const Leaderboard = styled.img`
   /* float: right; */
-  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 530px;
 `
 
 const AboutMe = () => {
@@ -21,18 +24,25 @@ const AboutMe = () => {
       <p>
         Juuri tästä kisasta valitaan Suomelle kuuden ja neljän hengen joukkueet kansainvälisiin koodausolympialaisiin (BOI ja IOI).
       </p>
+      <p>
+        Datatähden viralliset nettisivut:
+        <br />
+        <LinkToNewTab href="https://datatahti.fi/" />
+      </p>
     </>
   )
   const source = (
     <>
       <p>
         Teknologiateollisuuden stipendin saajat:
+        <br />
+        <LinkToNewTab>https://techfinland100.fi/wp/wp-content/uploads/2020/05/Ylioppilaat-kev%C3%A4t-2020.pdf</LinkToNewTab>
       </p>
-      <LinkToNewTab>https://techfinland100.fi/wp/wp-content/uploads/2020/05/Ylioppilaat-kev%C3%A4t-2020.pdf</LinkToNewTab>
       <p>
         Pitkän matematiikan kirjoittajien määrä:
+        <br />
+        <LinkToNewTab>https://www.ylioppilastutkinto.fi/ext/stat/FS2020A2011T2010.pdf</LinkToNewTab>
       </p>
-      <LinkToNewTab>https://www.ylioppilastutkinto.fi/ext/stat/FS2020A2011T2010.pdf</LinkToNewTab>
     </>
   )
 
@@ -40,11 +50,8 @@ const AboutMe = () => {
     <div>
       <h2>Tietoa minusta</h2>
       <p>
-        Olen päässyt lukion välisessä, valtakunnallisessa {}
-        <LinkToNewTab href="https://datatahti.fi/">
-          Datatähti-ohjelmointikilpailussa
-        </LinkToNewTab>
-        <OpenModal>{datatahtiContent}</OpenModal> {}
+        Olen päässyt lukion välisessä, valtakunnallisessa Datatähti-ohjelmointikilpailussa
+        <OpenModal>{datatahtiContent}</OpenModal>
 
         kymmenennelle sijalle vuonna 2020 sekä suorittanut 26 opintopisteen verran yliopiston koodauskursseja kaikki 5:n arvosanalla.
         {/* <InfoModal text="opintosuoritukseni"><Studies /></InfoModal> */}
@@ -54,7 +61,7 @@ const AboutMe = () => {
         <LinkToNewTab href="https://techfinland100.fi/ylioppilaat2020/">
           Teknologiateollisuuden stipendin
         </LinkToNewTab>, jonka sai vain {}
-        149 kokelasta 13 760 pitkän matematiikan kirjoittajista
+        149 kokelasta 13 760 pitkän matematiikan kirjoittajista (eli noin 1 prosentin parhaimmisto).
         {/* https://www.ylioppilastutkinto.fi/tietopalvelut/tilastot/tilastotaulukot */}
         <OpenModal text="lähde">{source}</OpenModal>
       </p>
@@ -63,7 +70,7 @@ const AboutMe = () => {
       </p>
 
       {/* <LinkToNewTab href="https://datatahti.fi/aiemmat-vuodet.html"> */}
-      <FloatRight
+      <Leaderboard
         src={leaderboardPic}
         alt="Kuva Datatähti 2020:n tulokset"
       />

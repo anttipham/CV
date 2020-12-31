@@ -29,7 +29,10 @@ const TableRow = ({ left, right, children }) => {
 TableRow.propTypes = {
   left: PropTypes.string.isRequired,
   right: PropTypes.string,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.string.isRequired,
+    PropTypes.element
+  ]),
 }
 
 export default TableRow
