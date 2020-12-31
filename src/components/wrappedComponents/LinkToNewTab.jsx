@@ -1,10 +1,11 @@
 import Link from '@material-ui/core/Link'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const LinkToNewTab = (props) => {
   props = { ...props }
-  if (!props.href && typeof props.children === 'string') {
-    props.href = props.children
+  if (!props.children) {
+    props.children = props.href
   }
   return (
     <Link
@@ -12,6 +13,10 @@ const LinkToNewTab = (props) => {
       target="_blank" rel="noopener noreferrer"
     />
   )
+}
+
+LinkToNewTab.propTypes = {
+  href: PropTypes.string.isRequired
 }
 
 export default LinkToNewTab
