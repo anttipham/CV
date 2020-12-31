@@ -1,11 +1,22 @@
-import { Link, Modal, Paper } from '@material-ui/core'
+import { Button, Modal, Paper, withStyles } from '@material-ui/core'
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import SmallTextAbove from './wrappedComponents/SmallTextAbove'
+// import SmallTextAbove from './wrappedComponents/SmallTextAbove'
+
+const OpenModalButton = withStyles({
+  root: {
+    top: '-0.5em',
+    minWidth: 'auto',
+  },
+  label: {
+    fontSize: '0.5em',
+  },
+})(Button)
 
 const ModalDiv = styled(Paper)`
   position: absolute;
-  width: 550px;
+  width: calc(90% - 42px);
+  max-width: 550px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -30,11 +41,13 @@ const OpenModal = ({ text='lisätietoa', children }) => {
 
   return (
     <>
-      <SmallTextAbove>
-        <Link href="#" onClick={handleOpen}>
-          {text}
-        </Link>
-      </SmallTextAbove>
+      {/* <ModalOpenTextAbove> */}
+      {/* <Link href="#" onClick={handleOpen}> */}
+      <OpenModalButton color="primary" size="small" onClick={handleOpen}>
+        {text}
+      </OpenModalButton>
+      {/* </Link> */}
+      {/* </ModalOpenTextAbove> */}
 
       <Modal
         open={open}
