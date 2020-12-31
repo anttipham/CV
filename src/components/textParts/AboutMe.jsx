@@ -61,7 +61,7 @@ const AboutMe = () => {
         <LinkToNewTab href="https://techfinland100.fi/ylioppilaat2020/">
           Teknologiateollisuuden stipendin
         </LinkToNewTab>, jonka sai vain {}
-        149 kokelasta 13 760 pitkän matematiikan kirjoittajista (eli noin 1 prosentin parhaimmisto).
+        149 kokelasta 13 760 pitkän matematiikan kirjoittajista (eli noin yhden prosentin parhaimmisto).
         {/* https://www.ylioppilastutkinto.fi/tietopalvelut/tilastot/tilastotaulukot */}
         <OpenModal text="lähde">{source}</OpenModal>
       </p>
@@ -74,7 +74,6 @@ const AboutMe = () => {
         src={leaderboardPic}
         alt="Kuva Datatähti 2020:n tulokset"
       />
-      {/* </LinkToNewTab> */}
     </div>
   )
 }

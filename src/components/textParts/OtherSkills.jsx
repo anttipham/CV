@@ -16,7 +16,7 @@ const OtherSkills = () => {
         Osaan väkisin vaihtaa Windows 10 -tietokoneen salasanan, joten tietokoneesi salasanan vahvuudella ei ole mitään merkitystä minun edessäni &gt;:D
         <OpenModal>
           <p>
-            Opin tämän työkokeilussa Hopessa. Lahjoitettujen tietokoneiden salasanat joskus unohtuvat, jolloin tarvitaan järempiä keinoja.
+            Opin tämän työkokeilussani Hopessa. Lahjoitettujen tietokoneiden salasanat joskus unohtuvat, jolloin tarvitaan järempiä keinoja.
           </p>
         </OpenModal>
       </p>
