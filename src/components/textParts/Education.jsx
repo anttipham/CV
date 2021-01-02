@@ -1,7 +1,7 @@
 import React from 'react'
 import OpenModal from '../OpenModal'
 import LinkToNewTab from '../displayComponents/LinkToNewTab'
-import TableRow from './TableRow'
+import FlexList from '../displayComponents/FlexList'
 import certificateFullstack from '../../pictures/certificate-fullstack.png'
 import Img from '../displayComponents/Img'
 
@@ -51,16 +51,16 @@ const Education = () => {
       <h2>Koulutus</h2>
       {/* <OpenModal>{modalContent}</OpenModal> */}
 
-      <TableRow left="Etelä-Hervannan koulu" right="2008 – 2017">
+      <FlexList left="Etelä-Hervannan koulu" right="2008 – 2017">
         Yläaste suoritettu matematiikka-tietotekniikka -painoitteisen opetussuunnitelman mukaan.
-      </TableRow>
-      <TableRow left="Tampereen teknillinen lukio" right="2017 – 2020">
+      </FlexList>
+      <FlexList left="Tampereen teknillinen lukio" right="2017 – 2020">
         Matematiikka ja tekniikka -linja
-      </TableRow>
-      <TableRow left="Tampereen yliopisto" right="2019">
+      </FlexList>
+      <FlexList left="Tampereen yliopisto" right="2019">
         Erillisoikeus ohjelmoinnin kurssille
-      </TableRow>
-      <TableRow left="Avoin yliopisto">
+      </FlexList>
+      <FlexList left="Avoin yliopisto">
         <>
           <p>
             Joitakin kursseja Tampereen ja Helsingin yliopistosta.
@@ -76,7 +76,7 @@ const Education = () => {
             Tämä suoritus todistaa ongelmanratkaisutaitoni ja sinnikkyyteni olevan erinomaisia.
           </p>
         </>
-      </TableRow>
+      </FlexList>
 
       <p>
         Lisätietoa opinnoistani ja niiden arvosanoista voi katsoa Opetushallituksen ylläpitämästä Opintopolku-sivustolta:

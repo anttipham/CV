@@ -33,7 +33,7 @@ const Content = styled.div`
  * Flexbox lista otsikoiden kanssa
  * @param {object} props left on vasen otsikko, right on oikea otsikko ja children on sisältö.
  */
-const TableRow = ({ left, right, children }) => {
+const FlexList = ({ left, right, children }) => {
   return (
     <FlexParent>
       <LeftHeader>{left}</LeftHeader>
@@ -45,7 +45,7 @@ const TableRow = ({ left, right, children }) => {
   )
 }
 
-TableRow.propTypes = {
+FlexList.propTypes = {
   left: PropTypes.string.isRequired,
   right: PropTypes.string,
   children: PropTypes.oneOfType([
@@ -54,4 +54,4 @@ TableRow.propTypes = {
   ]),
 }
 
-export default TableRow
+export default FlexList

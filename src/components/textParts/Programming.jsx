@@ -1,29 +1,29 @@
 import React from 'react'
-import TableRow from './TableRow'
+import FlexList from '../displayComponents/FlexList'
 
 const Programming = () => {
   return (
     <div>
       <h2>Osaamani ohjelmointiin liittyvät teknologiat yms.</h2>
 
-      <TableRow left="Ohjelmointikielet">
+      <FlexList left="Ohjelmointikielet">
         C++, Python, JavaScript
-      </TableRow>
-      <TableRow left="GUI">
+      </FlexList>
+      <FlexList left="GUI">
         Python Tkinter
-      </TableRow>
-      <TableRow left="Full Stack">
+      </FlexList>
+      <FlexList left="Full Stack">
         Express.js, React, Redux, GraphQL
-      </TableRow>
-      <TableRow left="Tietokannat">
+      </FlexList>
+      <FlexList left="Tietokannat">
         MongoDB
-      </TableRow>
-      <TableRow left="Ongelmanratkaisutavat">
+      </FlexList>
+      <FlexList left="Ongelmanratkaisutavat">
         Dynamic programming, hyppytaulukot jne.
-      </TableRow>
-      <TableRow left="Algoritmit ja tietorakenteet">
+      </FlexList>
+      <FlexList left="Algoritmit ja tietorakenteet">
         Suffiksitaulukko, segmenttipuu, Ford–Fulkersonin algoritmi jne.
-      </TableRow>
+      </FlexList>
     </div>
   )
 }
