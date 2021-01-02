@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import leaderboardPic from '../../pictures/leaderboard.jpg'
 import OpenModal from '../OpenModal'
-import LinkToNewTab from '../wrappedComponents/LinkToNewTab'
+import Img from '../displayComponents/Img'
+import LinkToNewTab from '../displayComponents/LinkToNewTab'
 
-const Leaderboard = styled.img`
+const Leaderboard = styled(Img)`
   /* float: right; */
   display: block;
   margin: 0 auto;
-  width: 100%;
   max-width: 530px;
 `
 
@@ -36,12 +36,12 @@ const AboutMe = () => {
       <p>
         Teknologiateollisuuden stipendin saajat:
         <br />
-        <LinkToNewTab>https://techfinland100.fi/wp/wp-content/uploads/2020/05/Ylioppilaat-kev%C3%A4t-2020.pdf</LinkToNewTab>
+        <LinkToNewTab href="https://techfinland100.fi/wp/wp-content/uploads/2020/05/Ylioppilaat-kev%C3%A4t-2020.pdf" />
       </p>
       <p>
         Pitkän matematiikan kirjoittajien määrä:
         <br />
-        <LinkToNewTab>https://www.ylioppilastutkinto.fi/ext/stat/FS2020A2011T2010.pdf</LinkToNewTab>
+        <LinkToNewTab href="https://www.ylioppilastutkinto.fi/ext/stat/FS2020A2011T2010.pdf" />
       </p>
     </>
   )
@@ -70,10 +70,12 @@ const AboutMe = () => {
       </p>
 
       {/* <LinkToNewTab href="https://datatahti.fi/aiemmat-vuodet.html"> */}
-      <Leaderboard
-        src={leaderboardPic}
-        alt="Kuva Datatähti 2020:n tulokset"
-      />
+      <LinkToNewTab href={leaderboardPic}>
+        <Leaderboard
+          src={leaderboardPic}
+          alt="Kuva Datatähti 2020:n tulokset"
+        />
+      </LinkToNewTab>
     </div>
   )
 }

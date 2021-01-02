@@ -1,5 +1,5 @@
 import React from 'react'
-import LinkToNewTab from '../wrappedComponents/LinkToNewTab'
+import LinkToNewTab from '../displayComponents/LinkToNewTab'
 
 const UPDATED = '31.12.2020'
 
@@ -13,7 +13,10 @@ const Introduction = () => {
       </div>
 
       <p>
-        Tämä sivusto on create-react-appilla tehty. Olen työstänyt tätä sivua yksin (välillä Googlaten). Lähdekoodi on näkyvillä <LinkToNewTab href={sourceCode}>GitHubissa</LinkToNewTab>.
+        Tämä sivusto on create-react-appilla tehty. Sivun kaikki linkit avautuvat uuteen ikkunaan.
+      </p>
+      <p>
+        Olen työstänyt tätä sivua yksin (välillä Googlaten). Lähdekoodi on näkyvillä <LinkToNewTab href={sourceCode}>GitHubissa</LinkToNewTab>.
       </p>
     </div>
   )

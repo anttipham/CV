@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Left = styled.th`
-  width: 470px;
+  /* width: 470px; */
 `
 const Right = styled.th`
   white-space: nowrap;
@@ -20,7 +20,7 @@ const TableRow = ({ left, right, children }) => {
         <Right>{right}</Right>
       </tr>
       <tr>
-        <PaddedTd>{children}</PaddedTd>
+        <PaddedTd colSpan="2">{children}</PaddedTd>
       </tr>
     </>
   )

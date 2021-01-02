@@ -5,8 +5,9 @@ import styled from 'styled-components'
 
 const OpenModalButton = withStyles({
   root: {
-    top: '-0.5em',
+    top: '-0.4em',
     minWidth: 'auto',
+    padding: '0 5px',
   },
   label: {
     fontSize: '0.5em',
@@ -16,7 +17,7 @@ const OpenModalButton = withStyles({
 const ModalDiv = styled(Paper)`
   position: absolute;
   width: calc(90% - 42px);
-  max-width: 550px;
+  max-width: 800px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

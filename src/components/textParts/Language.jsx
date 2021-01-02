@@ -1,5 +1,5 @@
 import React from 'react'
-import { Th } from '../wrappedComponents/Table'
+import { Th } from '../displayComponents/Table'
 
 const Language = () => {
   return (

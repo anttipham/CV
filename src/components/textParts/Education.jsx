@@ -1,10 +1,26 @@
 import React from 'react'
 import OpenModal from '../OpenModal'
-import LinkToNewTab from '../wrappedComponents/LinkToNewTab'
+import LinkToNewTab from '../displayComponents/LinkToNewTab'
 import TableRow from './TableRow'
+import certificateFullstack from '../../pictures/certificate-fullstack.png'
+import Img from '../displayComponents/Img'
 
 const Education = () => {
-  const courseInfo = (
+  const fullStackCourseInfo = (
+    <div>
+      <h3>
+        <LinkToNewTab href="https://fullstackopen.com/en/">
+          Full Stack Open
+        </LinkToNewTab>
+      </h3>
+      <p>Kurssilla opin käyttämään Reactia ja Express.js:ää.</p>
+      <LinkToNewTab href={certificateFullstack}>
+        <Img src={certificateFullstack} />
+      </LinkToNewTab>
+    </div>
+  )
+
+  const algorithmCourseInfo = (
     <div>
       <h3>
         <LinkToNewTab href="https://courses.helsinki.fi/fi/aytkt21012/132861520">
@@ -12,7 +28,7 @@ const Education = () => {
         </LinkToNewTab>
       </h3>
       <p>
-        Kurssilla annetaan algoritmeihin ja ongelmanratkaisuun liittyviä koodaustehtäviä. Palautteen mukaan kurssi oli erittäin työläs ja vaikea.
+        Kurssilla annetaan algoritmeihin ja ongelmanratkaisuun liittyviä koodaustehtäviä. Kurssipalautteen mukaan kurssi oli erittäin työläs ja vaikea.
       </p>
       <p>
         Minä sitten päätin suorittaa tämän vaikean kurssin lukiolaisena, vaikka en ollut täyttänyt edes kurssin esitietovaatimuksia. Tämän vuoksi minun joutui opettelemaan joitakin tietorakenteita omatoimisesti.
@@ -48,12 +64,15 @@ const Education = () => {
           </TableRow>
           <TableRow left="Avoin yliopisto">
             <>
-              Joitakin kursseja Tampereen ja Helsingin yliopistosta
+              Joitakin kursseja Tampereen ja Helsingin yliopistosta.
               <p>
-                Haluan erikseen mainita suorittaneeni Helsingin yliopistossa Algoritmit ongelmanratkaisussa -kurssin arvosanalla 5.
-                <OpenModal>{courseInfo}</OpenModal>
-                Tämä suoritus todistaa ongelmanratkaisutaitoni ja sinnikkyyteni olevan erinomaisia.
+                Olen Helsingin yliopistosta suorittanut Full Stack Open
+                <OpenModal>{fullStackCourseInfo}</OpenModal>
+                ja Algoritmit ongelmanratkaisussa
+                <OpenModal>{algorithmCourseInfo}</OpenModal>
+                -kurssin molemmat arvosanalla 5.
               </p>
+              Tämä suoritus todistaa ongelmanratkaisutaitoni ja sinnikkyyteni olevan erinomaisia.
             </>
           </TableRow>
         </tbody>

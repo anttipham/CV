@@ -6,6 +6,10 @@ body {
   /* overflow-x: hidden; */
 }
 
+p {
+  word-wrap: break-word;
+}
+
 table {
   width: 100%;
   margin: 20px 0;
