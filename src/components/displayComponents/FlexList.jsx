@@ -31,7 +31,10 @@ const Content = styled.div`
 
 /**
  * Flexbox lista otsikoiden kanssa
- * @param {object} props left on vasen otsikko, right on oikea otsikko ja children on sisältö.
+ * @param props
+ * @param props.left vasen otsikko
+ * @param props.right right on lihoitettu teksti otsikon oikealla puolella
+ * @param props.children sisältö
  */
 const FlexList = ({ left, right, children }) => {
   return (
