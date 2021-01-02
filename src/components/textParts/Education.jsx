@@ -51,32 +51,32 @@ const Education = () => {
       <h2>Koulutus</h2>
       {/* <OpenModal>{modalContent}</OpenModal> */}
 
-      <table>
-        <tbody>
-          <TableRow left="Etelä-Hervannan koulu" right="2008 – 2017">
-            Yläaste suoritettu matematiikka-tietotekniikka -painoitteisen opetussuunnitelman mukaan.
-          </TableRow>
-          <TableRow left="Tampereen teknillinen lukio" right="2017 – 2020">
-            Matematiikka ja tekniikka -linja
-          </TableRow>
-          <TableRow left="Tampereen yliopisto" right="2019">
-            Erillisoikeus ohjelmoinnin kurssille
-          </TableRow>
-          <TableRow left="Avoin yliopisto">
-            <>
-              Joitakin kursseja Tampereen ja Helsingin yliopistosta.
-              <p>
-                Olen Helsingin yliopistosta suorittanut Full Stack Open
-                <OpenModal>{fullStackCourseInfo}</OpenModal>
-                ja Algoritmit ongelmanratkaisussa
-                <OpenModal>{algorithmCourseInfo}</OpenModal>
-                -kurssin molemmat arvosanalla 5.
-              </p>
-              Tämä suoritus todistaa ongelmanratkaisutaitoni ja sinnikkyyteni olevan erinomaisia.
-            </>
-          </TableRow>
-        </tbody>
-      </table>
+      <TableRow left="Etelä-Hervannan koulu" right="2008 – 2017">
+        Yläaste suoritettu matematiikka-tietotekniikka -painoitteisen opetussuunnitelman mukaan.
+      </TableRow>
+      <TableRow left="Tampereen teknillinen lukio" right="2017 – 2020">
+        Matematiikka ja tekniikka -linja
+      </TableRow>
+      <TableRow left="Tampereen yliopisto" right="2019">
+        Erillisoikeus ohjelmoinnin kurssille
+      </TableRow>
+      <TableRow left="Avoin yliopisto">
+        <>
+          <p>
+            Joitakin kursseja Tampereen ja Helsingin yliopistosta.
+          </p>
+          <p>
+            Olen Helsingin yliopistosta suorittanut Full Stack Open
+            <OpenModal>{fullStackCourseInfo}</OpenModal>
+            ja Algoritmit ongelmanratkaisussa
+            <OpenModal>{algorithmCourseInfo}</OpenModal>
+            -kurssin molemmat arvosanalla 5.
+          </p>
+          <p>
+            Tämä suoritus todistaa ongelmanratkaisutaitoni ja sinnikkyyteni olevan erinomaisia.
+          </p>
+        </>
+      </TableRow>
 
       <p>
         Lisätietoa opinnoistani ja niiden arvosanoista voi katsoa Opetushallituksen ylläpitämästä Opintopolku-sivustolta:

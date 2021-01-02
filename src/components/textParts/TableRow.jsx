@@ -2,27 +2,46 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Left = styled.th`
-  /* width: 470px; */
+const FlexParent = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `
-const Right = styled.th`
+const LeftHeader = styled.div`
+  width: 60%;
+  min-width: 215px;
   white-space: nowrap;
+  font-weight: 700;
+  flex-grow: 2;
 `
-const PaddedTd = styled.td`
-  padding: 0 0 10px 20px;
+const RightHeader = styled.div`
+  width: 40%;
+  white-space: nowrap;
+  font-weight: 700;
+  flex-grow: 1;
+`
+const Content = styled.div`
+  width: calc(100% - 20px);
+  margin: 0 0 10px 20px;
+  flex-grow: 2;
+
+  & p {
+    margin: 10px 0;
+  }
 `
 
+/**
+ * Flexbox lista otsikoiden kanssa
+ * @param {object} props left on vasen otsikko, right on oikea otsikko ja children on sisältö.
+ */
 const TableRow = ({ left, right, children }) => {
   return (
-    <>
-      <tr>
-        <Left>{left}</Left>
-        <Right>{right}</Right>
-      </tr>
-      <tr>
-        <PaddedTd colSpan="2">{children}</PaddedTd>
-      </tr>
-    </>
+    <FlexParent>
+      <LeftHeader>{left}</LeftHeader>
+      <RightHeader>{right}</RightHeader>
+      <Content>
+        {typeof children === 'string' ? <p>{children}</p> : children}
+      </Content>
+    </FlexParent>
   )
 }
 
