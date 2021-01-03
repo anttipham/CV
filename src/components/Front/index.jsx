@@ -20,7 +20,7 @@ const Container = styled.div`
 `
 
 const Front = () => {
-  const PICTURES_AMOUNT = 2
+  const PICTURES_AMOUNT = 3
   const [doneLoading, setDoneLoading] = useState(0)
   const [active, setActive] = useState(false)
 
