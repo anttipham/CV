@@ -16,7 +16,7 @@ const Introduction = () => {
         Tämä sivusto on create-react-appilla tehty. Sivun kaikki linkit avautuvat uuteen ikkunaan.
       </p>
       <p>
-        Olen työstänyt tätä sivua yksin (välillä Googlaten). Lähdekoodi on näkyvillä <LinkToNewTab href={sourceCode}>GitHubissa</LinkToNewTab>.
+        Olen työstänyt tätä sivua yksin (välillä Googlaten). Lähdekoodi on näkyvillä <LinkToNewTab href={sourceCode}>GitHubissa</LinkToNewTab>. Sivu on vielä kesken, ja suunnittelen ulkoasun parantamista vielä.
       </p>
     </div>
   )
