@@ -34,14 +34,18 @@ const Education = () => {
         Minä sitten päätin suorittaa tämän vaikean kurssin lukiolaisena, vaikka en ollut täyttänyt edes kurssin esitietovaatimuksia. Tämän vuoksi minun joutui opettelemaan joitakin tietorakenteita omatoimisesti.
       </p>
       <p>
-        Arvosanaan 5 pitää tehdä keskimäärin viisi tehtävää joka viikko. Kurssin tehtävät ja vähäiset kurssimateriaalit voi katsoa täältä:
-        <br />
+        Kurssimateriaalit ja kurssin tehtävät voidaan katsoa täältä: {}
         <LinkToNewTab href="https://cses.fi/alon20/list/" />
+        <br />
+        Arvosanaan 5 pitää tehdä keskimäärin viisi tehtävää joka viikko.
       </p>
       <p>
         <em>
           Kurssimateriaalit olivat joskus aivan mystisiä, esim. suffiksitaulukko.
         </em>
+      </p>
+      <p>
+        Tämä suoritus todistaa sen, että olen sinnikäs ja että olen erinomainen ongelmanratkaisussa.
       </p>
     </div>
   )
@@ -71,9 +75,6 @@ const Education = () => {
             ja Algoritmit ongelmanratkaisussa
             <OpenModal>{algorithmCourseInfo}</OpenModal>
             -kurssin molemmat arvosanalla 5.
-          </p>
-          <p>
-            Tämä suoritus todistaa ongelmanratkaisutaitoni ja sinnikkyyteni olevan erinomaisia.
           </p>
         </>
       </FlexList>
