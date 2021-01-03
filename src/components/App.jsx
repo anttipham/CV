@@ -18,12 +18,12 @@ import WorkExperience from './textParts/WorkExperience'
 
 const Container = styled.div`
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 700px;
   padding: 30px;
   padding-bottom: 100px;
 `
 const FadeWithMargin = styled(Fade)`
-  margin: 50px 0;
+  margin: 20% 0;
 `
 
 const App = () => (
