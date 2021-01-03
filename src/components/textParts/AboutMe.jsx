@@ -50,10 +50,10 @@ const AboutMe = () => {
     <div>
       <h2>Tietoa minusta</h2>
       <p>
-        Olen päässyt lukion välisessä, valtakunnallisessa Datatähti-ohjelmointikilpailussa
+        Olen päässyt lukioiden välisessä, valtakunnallisessa Datatähti-ohjelmointikilpailussa
         <OpenModal>{datatahtiContent}</OpenModal>
 
-        kymmenennelle sijalle vuonna 2020 sekä suorittanut 26 opintopisteen verran yliopiston koodauskursseja kaikki 5:n arvosanalla.
+        kymmenennelle sijalle vuonna 2020 ja saanut sieltä <LinkToNewTab href="/assets/pdf/datatahti.pdf">kunniakirjan</LinkToNewTab>. Olen myös suorittanut 26 opintopisteen verran yliopiston koodauskursseja kaikki 5:n arvosanalla.
         {/* <InfoModal text="opintosuoritukseni"><Studies /></InfoModal> */}
       </p>
       <p>
