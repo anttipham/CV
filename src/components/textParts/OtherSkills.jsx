@@ -1,5 +1,4 @@
 import React from 'react'
-import OpenModal from '../OpenModal'
 
 const OtherSkills = () => {
   return (
@@ -13,12 +12,7 @@ const OtherSkills = () => {
         Laaja tietämys tietokoneiden komponenteista (eli tietokoneiden osista), ja osaan kasata tietokoneen.
       </p>
       <p>
-        Osaan väkisin vaihtaa Windows 10 -tietokoneen salasanan, joten tietokoneesi salasanan vahvuudella ei ole mitään merkitystä minun edessäni &gt;:D
-        <OpenModal>
-          <p>
-            Opin tämän työkokeilussani Hopessa. Lahjoitettujen tietokoneiden salasanat joskus unohtuvat, jolloin tarvitaan järempiä keinoja.
-          </p>
-        </OpenModal>
+        Osaan väkisin vaihtaa Windows 10 -tietokoneen salasanan, joten minut voi kutsua auttamaan, kun salasana unohtuu.
       </p>
       <p>
         Osaan käyttää taulukkolaskentaohjelmia.
