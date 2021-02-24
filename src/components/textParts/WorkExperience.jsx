@@ -1,5 +1,6 @@
 import React from 'react'
 import FlexList from '../displayComponents/FlexList'
+import LinkToNewTab from '../displayComponents/LinkToNewTab'
 
 const WorkExperience = () => {
   return (
@@ -18,6 +19,10 @@ const WorkExperience = () => {
       <FlexList left="Hope ry" right="24.8. – 17.12.2020">
         Full Stack -ohjelmoija, ohjelmistokehittäjä, tekninen tuki
       </FlexList>
+
+      <p>
+        <LinkToNewTab href="assets/pdf/tyotodistukset.pdf">Tässä</LinkToNewTab> on työtodistukseni.
+      </p>
     </div>
   )
 }
