@@ -9,7 +9,7 @@ import Front from './Front'
 import AboutMe from './textParts/AboutMe'
 import ContactInformation from './textParts/ContactInformation'
 import Education from './textParts/Education'
-import Hobbies from './textParts/Hobbies'
+// import Hobbies from './textParts/Hobbies'
 import Introduction from './textParts/Introduction'
 import Language from './textParts/Language'
 import OtherSkills from './textParts/OtherSkills'
@@ -43,7 +43,7 @@ const App = () => (
         <Language />
         <Programming />
         <OtherSkills />
-        <Hobbies />
+        {/* <Hobbies /> */}
       </AnimateChildren>
     </Container>
   </>
