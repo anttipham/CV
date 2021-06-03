@@ -5,7 +5,7 @@ import OpenModal from '../OpenModal'
 import Img from '../displayComponents/Img'
 import LinkToNewTab from '../displayComponents/LinkToNewTab'
 
-const Leaderboard = styled(Img)`
+const DatatahtiImg = styled(Img)`
   /* float: right; */
   display: block;
   margin: 0 auto;
@@ -34,12 +34,12 @@ const AboutMe = () => {
   const source = (
     <>
       <p>
-        Teknologiateollisuuden stipendin saajat:
+        Teknologiateollisuuden stipendin saajia 149:
         <br />
         <LinkToNewTab href="https://techfinland100.fi/wp/wp-content/uploads/2020/05/Ylioppilaat-kev%C3%A4t-2020.pdf" />
       </p>
       <p>
-        Pitkän matematiikan kirjoittajien määrä:
+        Pitkän matematiikan kirjoittajia 13 760:
         <br />
         <LinkToNewTab href="https://www.ylioppilastutkinto.fi/ext/stat/FS2020A2011T2010.pdf" />
       </p>
@@ -60,8 +60,7 @@ const AboutMe = () => {
         Sain keväällä 2020 {}
         <LinkToNewTab href="https://techfinland100.fi/ylioppilaat2020/">
           Teknologiateollisuuden stipendin
-        </LinkToNewTab>, jonka sai vain {}
-        149 kokelasta 13 760 pitkän matematiikan kirjoittajista (eli noin yhden prosentin parhaimmisto).
+        </LinkToNewTab>, jonka sai yhden prosentin parhaimmisto.
         {/* https://www.ylioppilastutkinto.fi/tietopalvelut/tilastot/tilastotaulukot */}
         <OpenModal text="lähde">{source}</OpenModal>
       </p>
@@ -70,12 +69,10 @@ const AboutMe = () => {
       </p>
 
       {/* <LinkToNewTab href="https://datatahti.fi/aiemmat-vuodet.html"> */}
-      <LinkToNewTab href={leaderboardPic}>
-        <Leaderboard
-          src={leaderboardPic}
-          alt="Kuva Datatähti 2020:n tulokset"
-        />
-      </LinkToNewTab>
+      <DatatahtiImg
+        src={leaderboardPic}
+        alt="Kuva Datatähti 2020:n tulokset"
+      />
     </div>
   )
 }

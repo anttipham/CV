@@ -19,6 +19,11 @@ const WorkExperience = () => {
       <FlexList left="Hope ry" right="24.8. – 17.12.2020">
         Full Stack -ohjelmoija, ohjelmistokehittäjä, tekninen tuki
       </FlexList>
+      <FlexList left="Salainen???" right="28.2. – 15.9.2021">
+        <span style={{ background: 'black' }}>
+          迚 ｹ 谿 贋 ｻ ｻ 蜍 迚 ｹ 谿 贋 ｻ ｻ 蜍
+        </span>
+      </FlexList>
 
       <p>
         <LinkToNewTab href="assets/pdf/tyotodistukset.pdf">Tässä</LinkToNewTab> on työtodistukseni.

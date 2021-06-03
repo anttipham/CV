@@ -16,7 +16,7 @@ const Programming = () => {
         Express.js, React, Redux, GraphQL
       </FlexList>
       <FlexList left="Tietokannat">
-        MongoDB
+        MongoDB, SQLite
       </FlexList>
       <FlexList left="Ongelmanratkaisutavat">
         Dynamic programming, hyppytaulukot jne.

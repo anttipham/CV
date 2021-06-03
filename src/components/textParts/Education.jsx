@@ -59,30 +59,35 @@ const Education = () => {
         Yläaste suoritettu matematiikka-tietotekniikka -painoitteisen opetussuunnitelman mukaan.
       </FlexList>
       <FlexList left="Tampereen teknillinen lukio" right="2017 – 2020">
-        Matematiikka ja tekniikka -linja
-      </FlexList>
-      <FlexList left="Tampereen yliopisto" right="2019">
-        Erillisoikeus ohjelmoinnin kurssille
+        <p>
+          Matematiikka ja tekniikka -linja
+        </p>
+        <p>
+          Sain erillisoikeuden osallistua Tampereen yliopiston ohjelmoinnin kurssille vuonna 2019 lukion aikana.
+        </p>
       </FlexList>
       <FlexList left="Avoin yliopisto">
-        <>
-          <p>
-            Joitakin kursseja Tampereen ja Helsingin yliopistosta.
-          </p>
-          <p>
-            Olen Helsingin yliopistosta suorittanut Full Stack Open
-            <OpenModal>{fullStackCourseInfo}</OpenModal>
-            ja Algoritmit ongelmanratkaisussa
-            <OpenModal>{algorithmCourseInfo}</OpenModal>
-            -kurssin molemmat arvosanalla 5.
-          </p>
-        </>
+        <p>
+          Joitakin kursseja Tampereen ja Helsingin yliopistosta.
+        </p>
+        <p>
+          Olen Helsingin yliopistosta suorittanut Full Stack Open
+          <OpenModal>{fullStackCourseInfo}</OpenModal>
+          ja Algoritmit ongelmanratkaisussa
+          <OpenModal>{algorithmCourseInfo}</OpenModal>
+          -kurssin molemmat arvosanalla 5.
+        </p>
+      </FlexList>
+      <FlexList left="Tampereen yliopisto" right="2021 – nyt">
+        <p>
+          Aloitin tietojenkäsittelytieteiden opinnot vuonna 2021
+        </p>
       </FlexList>
 
       <p>
         Lisätietoa opinnoistani ja niiden arvosanoista voi katsoa Opetushallituksen ylläpitämästä Opintopolku-sivustolta:
         <br />
-        <LinkToNewTab href="https://opintopolku.fi/koski/opinnot/c9e4209870af4d1e9073fa5b6b165c0b" />
+        <LinkToNewTab href="https://opintopolku.fi/koski/opinnot/d2dfe246f288417bb0e042f8ff9ac32a" />
       </p>
       <p>
         Yliopistossa käytetään 0–5-asteikkoa, lukiossa 4–10-asteikkoa ja S-merkintää (suoritettu).
